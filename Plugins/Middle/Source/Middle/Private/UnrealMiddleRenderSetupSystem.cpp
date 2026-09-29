@@ -86,7 +86,6 @@ FTransform toFTransform(const midPrimitive::Transform& transform) {
 
 void UnrealMiddleRenderSetupSystem::Update(UWorld* World, const middle::MiddleOutputState* const middleOutputState, middle::MiddleInputState* inputState) 
 {
-	const ImGui::FScopedContext ScopedContext;
 
 	//set camera pos 
 	auto pc = World->GetFirstPlayerController();
@@ -148,6 +147,7 @@ void UnrealMiddleRenderSetupSystem::Update(UWorld* World, const middle::MiddleOu
 	}
 
 	inputState->resultUiCalls.clear();
+	const ImGui::FScopedContext ScopedContext;
 	if (ScopedContext) {
 
 		for (int i = 0; i < middleOutputState->uiCalls.size(); ++i) {

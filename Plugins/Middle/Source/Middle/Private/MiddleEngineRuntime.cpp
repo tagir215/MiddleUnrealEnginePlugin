@@ -27,12 +27,14 @@ void MiddleEngineRuntime::Tick(UWorld* World, float deltaTime) {
 	FVector2D ViewportSize;
 	GEngine->GameViewport->GetViewportSize(ViewportSize);
 
-	const int fps = 60;
+	const int fps = 120;
+	GEngine->SetMaxFPS(fps);
 	const float fixedTimeStep = 1.0f / (float)fps;
 	inputState.screenWidth = ViewportSize.X;
 	inputState.screenHeight = ViewportSize.Y;
 	inputState.nearPlaneDistance = GNearClippingPlane;
-	inputState.frameTime = fixedTimeStep;
+	inputState.targetFrameTime = fixedTimeStep;
+	inputState.frameTime = deltaTime;
 
 	auto pc = World->GetFirstPlayerController();
 	if (pc) {
@@ -66,10 +68,6 @@ void MiddleEngineRuntime::Tick(UWorld* World, float deltaTime) {
 
 	}
 
-	if (outputStatePtr) {
-		inputState.frameTimeAccumulator = outputStatePtr->frameTimeAccumulator + deltaTime;
-	}
-
 	inputSystem.Update(World, outputStatePtr, inputState);
 
 	UpdateGame(inputState, &outputStatePtr);
@@ -78,8 +76,8 @@ void MiddleEngineRuntime::Tick(UWorld* World, float deltaTime) {
 }
 
 void MiddleEngineRuntime::ShutDown() {
-	//gameState->middleState.closeGame = true;
-	//UpdateGame(gameState.get());
+	inputState.closeGame = true;
+	UpdateGame(inputState, &outputStatePtr);
 }
 
 PRAGMA_ENABLE_OPTIMIZATION

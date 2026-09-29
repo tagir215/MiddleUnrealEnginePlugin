@@ -51,7 +51,7 @@ public class Middle : ModuleRules
 			Path.Combine(ModuleDirectory, "../MiddleRepo", "middle"));
 
 		PublicIncludePaths.Add(
-			Path.Combine(MiddleRoot, "MiddleRepo", "include"));
+			Path.Combine(MiddleRoot, "MiddleGame", "include"));
 
 		string GameBuildDir = 
 			Path.Combine(MiddleRoot, "build", "Release");

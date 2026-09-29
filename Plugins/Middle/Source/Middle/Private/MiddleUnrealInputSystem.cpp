@@ -116,68 +116,68 @@ void MiddleUnrealInputSystem::Update(UWorld* World, const middle::MiddleOutputSt
         editor.grabDown =
             IsDown(EKeys::G);
 
-        editor.grabReleased =
-            WasReleased(EKeys::G);
+        //editor.grabReleased =
+        //    WasReleased(EKeys::G);
 
-        editor.rotatePressed =
-            WasPressed(EKeys::X);
+        //editor.rotatePressed =
+        //    WasPressed(EKeys::X);
 
-        editor.rotateReleased =
-            WasReleased(EKeys::X);
+        //editor.rotateReleased =
+        //    WasReleased(EKeys::X);
 
-        editor.scaleDown =
-            IsDown(EKeys::Z);
+        //editor.scaleDown =
+        //    IsDown(EKeys::Z);
 
-        editor.scaleReleased =
-            WasReleased(EKeys::Z);
+        //editor.scaleReleased =
+        //    WasReleased(EKeys::Z);
 
-        editor.infoClick =
-            WasPressed(EKeys::I);
+        //editor.infoClick =
+        //    WasPressed(EKeys::I);
 
-        editor.loopClick =
-            WasPressed(EKeys::L);
+        //editor.loopClick =
+        //    WasPressed(EKeys::L);
 
-        editor.selectModeClick =
-            WasPressed(EKeys::One);
+        //editor.selectModeClick =
+        //    WasPressed(EKeys::One);
 
-        editor.sphereModeClick =
-            WasPressed(EKeys::Two);
+        //editor.sphereModeClick =
+        //    WasPressed(EKeys::Two);
 
-        editor.constraintModeClick =
-            WasPressed(EKeys::Three);
+        //editor.constraintModeClick =
+        //    WasPressed(EKeys::Three);
 
-        editor.cameraModeClick =
-            WasPressed(EKeys::Four);
+        //editor.cameraModeClick =
+        //    WasPressed(EKeys::Four);
 
-        editor.loopModeClick =
-            WasPressed(EKeys::Five);
+        //editor.loopModeClick =
+        //    WasPressed(EKeys::Five);
 
-        editor.hideClick =
-            WasPressed(EKeys::H);
+        //editor.hideClick =
+        //    WasPressed(EKeys::H);
 
-        editor.deleteClick =
-            WasPressed(EKeys::R);
+        //editor.deleteClick =
+        //    WasPressed(EKeys::R);
 
-        editor.copyClick =
-            WasPressed(EKeys::C);
+        //editor.copyClick =
+        //    WasPressed(EKeys::C);
 
-        editor.saveClick =
-            WasPressed(EKeys::P);
+        //editor.saveClick =
+        //    WasPressed(EKeys::P);
 
-        editor.navigateToFileClick =
-            WasPressed(EKeys::SpaceBar);
+        //editor.navigateToFileClick =
+        //    WasPressed(EKeys::SpaceBar);
 
-        editor.focus =
-            WasPressed(EKeys::F);
+        //editor.focus =
+        //    WasPressed(EKeys::F);
 
-        editor.reparentClick =
-            WasPressed(EKeys::E);
+        //editor.reparentClick =
+        //    WasPressed(EKeys::E);
 
-        editor.seaprateFromParentClick =
-            WasPressed(EKeys::R);
+        //editor.seaprateFromParentClick =
+        //    WasPressed(EKeys::R);
 
-        editor.nextScene =
-            WasPressed(EKeys::Tab);
+        //editor.nextScene =
+        //    WasPressed(EKeys::Tab);
     }
 
 
@@ -270,177 +270,177 @@ void MiddleUnrealInputSystem::Update(UWorld* World, const middle::MiddleOutputSt
 
     if (!keyboardBlocked)
     {
-        equlab.oneClicked =
-            WasPressed(EKeys::One);
+        //equlab.oneClicked =
+        //    WasPressed(EKeys::One);
 
-        equlab.twoClicked =
-            WasPressed(EKeys::Two);
+        //equlab.twoClicked =
+        //    WasPressed(EKeys::Two);
 
-        equlab.threeClicked =
-            WasPressed(EKeys::Three);
+        //equlab.threeClicked =
+        //    WasPressed(EKeys::Three);
 
-        equlab.fourClicked =
-            WasPressed(EKeys::Four);
+        //equlab.fourClicked =
+        //    WasPressed(EKeys::Four);
 
-        equlab.fiveClicked =
-            WasPressed(EKeys::Five);
+        //equlab.fiveClicked =
+        //    WasPressed(EKeys::Five);
 
-        equlab.sixClicked =
-            WasPressed(EKeys::Six);
+        //equlab.sixClicked =
+        //    WasPressed(EKeys::Six);
 
-        equlab.sevenClicked =
-            WasPressed(EKeys::Seven);
+        //equlab.sevenClicked =
+        //    WasPressed(EKeys::Seven);
 
-        equlab.eightClicked =
-            WasPressed(EKeys::Eight);
+        //equlab.eightClicked =
+        //    WasPressed(EKeys::Eight);
 
-        equlab.nineClicked =
-            WasPressed(EKeys::Nine);
+        //equlab.nineClicked =
+        //    WasPressed(EKeys::Nine);
 
-        equlab.zeroClicked =
-            WasPressed(EKeys::Zero);
-
-
-        equlab.f1Clicked =
-            WasPressed(EKeys::F1);
-
-        equlab.f2Clicked =
-            WasPressed(EKeys::F2);
-
-        equlab.f3Clicked =
-            WasPressed(EKeys::F3);
-
-        equlab.f4Clicked =
-            WasPressed(EKeys::F4);
-
-        equlab.f5Clicked =
-            WasPressed(EKeys::F5);
-
-        equlab.f6Clicked =
-            WasPressed(EKeys::F6);
-
-        equlab.f7Clicked =
-            WasPressed(EKeys::F7);
-
-        equlab.f8Clicked =
-            WasPressed(EKeys::F8);
-
-        equlab.f9Clicked =
-            WasPressed(EKeys::F9);
-
-        equlab.f10Clicked =
-            WasPressed(EKeys::F10);
-
-        equlab.f11Clicked =
-            WasPressed(EKeys::F11);
-
-        equlab.f12Clicked =
-            WasPressed(EKeys::F12);
+        //equlab.zeroClicked =
+        //    WasPressed(EKeys::Zero);
 
 
-        equlab.leftHeld =
-            IsDown(EKeys::Left);
+        //equlab.f1Clicked =
+        //    WasPressed(EKeys::F1);
 
-        equlab.rightHeld =
-            IsDown(EKeys::Right);
+        //equlab.f2Clicked =
+        //    WasPressed(EKeys::F2);
 
-        equlab.upHeld =
-            IsDown(EKeys::Up);
+        //equlab.f3Clicked =
+        //    WasPressed(EKeys::F3);
 
-        equlab.downHeld =
-            IsDown(EKeys::Down);
+        //equlab.f4Clicked =
+        //    WasPressed(EKeys::F4);
+
+        //equlab.f5Clicked =
+        //    WasPressed(EKeys::F5);
+
+        //equlab.f6Clicked =
+        //    WasPressed(EKeys::F6);
+
+        //equlab.f7Clicked =
+        //    WasPressed(EKeys::F7);
+
+        //equlab.f8Clicked =
+        //    WasPressed(EKeys::F8);
+
+        //equlab.f9Clicked =
+        //    WasPressed(EKeys::F9);
+
+        //equlab.f10Clicked =
+        //    WasPressed(EKeys::F10);
+
+        //equlab.f11Clicked =
+        //    WasPressed(EKeys::F11);
+
+        //equlab.f12Clicked =
+        //    WasPressed(EKeys::F12);
 
 
-        equlab.shiftHeld =
-            IsDown(EKeys::LeftShift) ||
-            IsDown(EKeys::RightShift);
+        //equlab.leftHeld =
+        //    IsDown(EKeys::Left);
 
-        equlab.ctrlHeld =
-            IsDown(EKeys::LeftControl) ||
-            IsDown(EKeys::RightControl);
+        //equlab.rightHeld =
+        //    IsDown(EKeys::Right);
 
-        equlab.altHeld =
-            IsDown(EKeys::LeftAlt) ||
-            IsDown(EKeys::RightAlt);
+        //equlab.upHeld =
+        //    IsDown(EKeys::Up);
+
+        //equlab.downHeld =
+        //    IsDown(EKeys::Down);
 
 
-        equlab.aClicked =
-            WasPressed(EKeys::A);
+        //equlab.shiftHeld =
+        //    IsDown(EKeys::LeftShift) ||
+        //    IsDown(EKeys::RightShift);
 
-        equlab.bClicked =
-            WasPressed(EKeys::B);
+        //equlab.ctrlHeld =
+        //    IsDown(EKeys::LeftControl) ||
+        //    IsDown(EKeys::RightControl);
 
-        equlab.cClicked =
-            WasPressed(EKeys::C);
+        //equlab.altHeld =
+        //    IsDown(EKeys::LeftAlt) ||
+        //    IsDown(EKeys::RightAlt);
 
-        equlab.dClicked =
-            WasPressed(EKeys::D);
 
-        equlab.eClicked =
-            WasPressed(EKeys::E);
+        //equlab.aClicked =
+        //    WasPressed(EKeys::A);
 
-        equlab.fClicked =
-            WasPressed(EKeys::F);
+        //equlab.bClicked =
+        //    WasPressed(EKeys::B);
 
-        equlab.gClicked =
-            WasPressed(EKeys::G);
+        //equlab.cClicked =
+        //    WasPressed(EKeys::C);
 
-        equlab.hClicked =
-            WasPressed(EKeys::H);
+        //equlab.dClicked =
+        //    WasPressed(EKeys::D);
 
-        equlab.iClicked =
-            WasPressed(EKeys::I);
+        //equlab.eClicked =
+        //    WasPressed(EKeys::E);
 
-        equlab.jClicked =
-            WasPressed(EKeys::J);
+        //equlab.fClicked =
+        //    WasPressed(EKeys::F);
 
-        equlab.kClicked =
-            WasPressed(EKeys::K);
+        //equlab.gClicked =
+        //    WasPressed(EKeys::G);
 
-        equlab.lClicked =
-            WasPressed(EKeys::L);
+        //equlab.hClicked =
+        //    WasPressed(EKeys::H);
 
-        equlab.mClicked =
-            WasPressed(EKeys::M);
+        //equlab.iClicked =
+        //    WasPressed(EKeys::I);
 
-        equlab.nClicked =
-            WasPressed(EKeys::N);
+        //equlab.jClicked =
+        //    WasPressed(EKeys::J);
 
-        equlab.oClicked =
-            WasPressed(EKeys::O);
+        //equlab.kClicked =
+        //    WasPressed(EKeys::K);
 
-        equlab.pClicked =
-            WasPressed(EKeys::P);
+        //equlab.lClicked =
+        //    WasPressed(EKeys::L);
 
-        equlab.qClicked =
-            WasPressed(EKeys::Q);
+        //equlab.mClicked =
+        //    WasPressed(EKeys::M);
 
-        equlab.rClicked =
-            WasPressed(EKeys::R);
+        //equlab.nClicked =
+        //    WasPressed(EKeys::N);
 
-        equlab.sClicked =
-            WasPressed(EKeys::S);
+        //equlab.oClicked =
+        //    WasPressed(EKeys::O);
 
-        equlab.tClicked =
-            WasPressed(EKeys::T);
+        //equlab.pClicked =
+        //    WasPressed(EKeys::P);
 
-        equlab.uClicked =
-            WasPressed(EKeys::U);
+        //equlab.qClicked =
+        //    WasPressed(EKeys::Q);
 
-        equlab.vClicked =
-            WasPressed(EKeys::V);
+        //equlab.rClicked =
+        //    WasPressed(EKeys::R);
 
-        equlab.wClicked =
-            WasPressed(EKeys::W);
+        //equlab.sClicked =
+        //    WasPressed(EKeys::S);
 
-        equlab.xClicked =
-            WasPressed(EKeys::X);
+        //equlab.tClicked =
+        //    WasPressed(EKeys::T);
 
-        equlab.yClicked =
-            WasPressed(EKeys::Y);
+        //equlab.uClicked =
+        //    WasPressed(EKeys::U);
 
-        equlab.zClicked =
-            WasPressed(EKeys::Z);
+        //equlab.vClicked =
+        //    WasPressed(EKeys::V);
+
+        //equlab.wClicked =
+        //    WasPressed(EKeys::W);
+
+        //equlab.xClicked =
+        //    WasPressed(EKeys::X);
+
+        //equlab.yClicked =
+        //    WasPressed(EKeys::Y);
+
+        //equlab.zClicked =
+        //    WasPressed(EKeys::Z);
     }
 }
 
